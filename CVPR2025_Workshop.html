@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ind3D @ CVPR 2025</title>
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Ind3D" />
+    <meta property="og:description" content="Enforcing Inductive Bias in 3D Generation - CVPR 2025 Workshop" />
+    <meta property="og:url" content="https://ind3d.github.io/cvpr2025" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ind3D" />
+    <meta name="twitter:description" content="Enforcing Inductive Bias in 3D Generation - CVPR 2025 Workshop" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        /* header {
+            background: linear-gradient(to bottom, #0056b3, #0056b3);
+            color: white;
+            padding: 20px 10%;
+            text-align: center;
+        } */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+                        url('./images/cvpr2025_nashville_tn.jpeg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 10%;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        header h2 {
+            margin: 0;
+            font-size: 1.7em;
+            font-weight: 300;
+        }
+        nav {
+            background: #f2f2f2;
+            padding: 10px 10%;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px 10%;
+            margin-bottom: 20px;
+        }
+        section h2 {
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .profile-card {
+            text-align: center;
+            max-width: 200px;
+        }
+        .profile-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .profile-card p {
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #0056b3;
+            color: white;
+        }
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <style>
+        /* Existing CSS here */
+        .header-corner {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 1.2em;
+            color: white;
+            padding: 5px 10px;
+            background-color: transparent; /* No background color */
+            font-weight: bold;
+            z-index: 10; /* Ensures it stays above the background */
+        }
+    </style>
+</head>
+<body>
+    <!-- Title Section -->
+    <header>
+        <br>
+        <h1>Ind3D: Enforcing Inductive Bias in 3D Generation</h1>
+        <h2>from Geometric, Physical, Topological, and Functional Perspectives</h2>
+        <h3><b>CVPR 2025</b></h3>
+        <h3>📍 Location: TBD</h3>
+        <h3>📅 Date: TBD</h3>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="#abstract">Abstract</a>
+        <a href="#speakers">Invited Speakers</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#organizers">Organizers</a>
+    </nav>
+
+    <!-- Abstract Section -->
+    <section id="abstract">
+        <h2 style="text-align: center;">Abstract</h2>
+        <p>
+            The current era of generative AI thrives on scaling data and models, yet fundamental challenges remain, particularly in preserving geometric, physical, topological, and functional priors in 3D generation. Unlike video generation models, such as OpenAI SORA, where shortcomings in physics or geometry do not critically undermine the method, 3D generation requires strict compliance with rich priors. Man-made objects, for instance, should exhibit strong primitive shapes, physical stability, and usability through human interaction. Existing approaches to address these issues focus on either network designs, such as equivariant networks, TutteNet, and CoFie, or regularization losses to enforce geometric structures, physical stability, and topological generalization. However, these efforts are often fragmented, focusing on specific priors, and are overshadowed by the emphasis on scaling datasets and model architectures.
+            <br>
+            This workshop aims to unite researchers to advance the integration of inductive biases in 3D generative models, providing tools that are simple, efficient, and impactful. By addressing the challenges of modeling inductive biases—which require interdisciplinary knowledge and often incur training costs—this workshop seeks to foster a community dedicated to these methods. As generative AI faces limits in training data and model scalability, incorporating inductive biases offers a path forward, enabling smaller models with reduced data requirements. While the focus is on 3D inductive biases due to their abundance of priors, the workshop's relevance extends to the broader computer vision community. Key topics include embedding geometrical, physical, topological, and functional operators into networks, enforcing constraints with losses, discovering relations from data, and 3D editing with guidance.
+        </p>
+    </section>
+
+    <!-- Invited Speakers Section -->
+    <section id="speakers">
+        <h2 style="text-align: center;">Invited Speakers</h2>
+        <div class="profile">
+            <div class="profile-card">
+                <img src="./images/leo.jpeg" alt="Leonidas Guibas">
+                <p><b>Leonidas Guibas</b></p>
+                <p>Stanford & Google</p>
+            </div>
+            <div class="profile-card">
+                <img src="./images/david2.jpeg" alt="David Forsyth">
+                <p><b>David Forsyth</b></p>
+                <p>UIUC</p>
+            </div>
+            <div class="profile-card">
+                <img src="./images/kostas.jpeg" alt="Kostas Daniilidis">
+                <p><b>Kostas Daniilidis</b></p>
+                <p>Upenn</p>
+            </div>
+            <div class="profile-card">
+                <img src="./images/richard.jpeg" alt="Richard Hao Zhang">
+                <p><b>Richard Hao Zhang</b></p>
+                <p>SFU</p>
+            </div>
+            <div style="flex-basis: 100%; height: 0;"></div>
+            <div class="profile-card">
+                <img src="./images/maks.jpeg" alt="Maks Ovsjanikov">
+                <p><b>Maks Ovsjanikov</b></p>
+                <p>Ecole Polytechnique</p>
+            </div>
+            <div class="profile-card">
+                <img src="./images/chenfanfu.jpeg" alt="Chenfanfu Jiang">
+                <p><b>Chenfanfu Jiang</b></p>
+                <p>UCLA</p>
+            </div>
+            <div class="profile-card">
+                <img src="./images/siyu.jpeg" alt="Siyu Tang">
+                <p><b>Siyu Tang</b></p>
+                <p>ETH</p>
+            </div>
+            <div class="profile-card">
+                <img src="./images/noam.jpeg" alt="Noam Aigerman">
+                <p><b>Noam Aigerman</b></p>
+                <p>UMontreal & Mila</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Schedule Section -->
+    <section id="schedule">
+        <h2 style="text-align: center;">Schedule</h2>
+        <div class="table-wrapper" style="display: flex; justify-content: center;">
+            <table class="alt" style="margin: 0 auto;">
+                <colgroup>
+                    <col style="width: 20%; text-align: left;">
+                    <col style="width: 50%; text-align: left;">
+                    <col style="width: 30%; text-align: left;">
+                </colgroup>
+                <tbody>
+                    <tr style="background-color: #d3d3d3;">
+                        <td>08:50 - 09:00</td>
+                        <td><strong>Opening Remarks</strong></td>
+                        <td>Workshop Organizers</td>
+                    </tr>
+                    <tr style="background-color: #f0f0f0;">
+                        <td>09:00 - 09:25</td>
+                        <td><strong>Speaker 1:</strong> Topic Title TBD</td>
+                        <td>Speaker Name</td>
+                    </tr>
+                    <tr style="background-color: #d3d3d3;">
+                        <td>09:25 - 09:50</td>
+                        <td><strong>Speaker 2:</strong> Topic Title TBD</td>
+                        <td>Speaker Name</td>
+                    </tr>
+                    <tr style="background-color: #f0f0f0;">
+                        <td>09:50 - 10:15</td>
+                        <td><strong>Speaker 3:</strong> Topic Title TBD</td>
+                        <td>Speaker Name</td>
+                    </tr>
+                    <tr style="background-color: #d3d3d3;">
+                        <td>10:15 - 10:40</td>
+                        <td><strong>Speaker 4:</strong> Topic Title TBD</td>
+                        <td>Speaker Name</td>
+                    </tr>
+                    <tr style="background-color: #f0f0f0;">
+                        <td>10:40 - 10:50</td>
+                        <td>Break</td>
+                        <td></td>
+                    </tr>
+                    <tr style="background-color: #d3d3d3;">
+                        <td>10:50 - 11:15</td>
+                        <td><strong>Speaker 5:</strong> Topic Title TBD</td>
+                        <td>Speaker Name</td>
+                    </tr>
+                    <tr style="background-color: #f0f0f0;">
+                        <td>11:15 - 11:40</td>
+                        <td><strong>Speaker 6:</strong> Topic Title TBD</td>
+                        <td>Speaker Name</td>
+                    </tr>
+                    <tr style="background-color: #d3d3d3;">
+                        <td>11:40 - 12:05</td>
+                        <td><strong>Speaker 7:</strong> Topic Title TBD</td>
+                        <td>Speaker Name</td>
+                    </tr>
+                    <tr style="background-color: #f0f0f0;">
+                        <td>12:05 - 12:30</td>
+                        <td><strong>Speaker 8:</strong> Topic Title TBD</td>
+                        <td>Speaker Name</td>
+                    </tr>
+                    <tr style="background-color: #d3d3d3;">
+                        <td>12:30 - 12:35</td>
+                        <td>Closing Remarks</td>
+                        <td>Workshop Organizers</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>    
+    
+
+
+    <!-- Organizers Section -->
+    <section id="organizers">
+        <h2 style="text-align: center;">Organizers</h2>
+        <div class="profile">
+            <div class="profile-card">
+                <img src="./images/qixing.jpg" alt="Qixing Huang">
+                <p><b>Qixing Huang</b></p>
+                <p>UT Austin</p>
+            </div>
+            <div class="profile-card">
+                <img src="./images/hanwen.jpg" alt="Hanwen Jiang">
+                <p><b>Hanwen Jiang</b></p>
+                <p>UT Austin</p>
+            </div>
+            <div class="profile-card">
+                <img src="./images/congyue.jpg" alt="Congyue Deng">
+                <p><b>Congyue Deng</b></p>
+                <p>Stanford</p>
+            </div>
+            <div class="profile-card">
+                <img src="./images/lin.jpeg" alt="Lin Gao">
+                <p><b>Lin Gao</b></p>
+                <p>UCAS</p>
+            </div>
+            <div class="profile-card">
+                <img src="./images/biao.jpeg" alt="Biao Zhang">
+                <p><b>Biao Zhang</b></p>
+                <p>KAUST</p>
+            </div>
+            <div style="flex-basis: 100%; height: 0;"></div>
+            <div class="profile-card">
+                <img src="./images/ruqi.jpeg" alt="Ruqi Huang">
+                <p><b>Ruqi Huang</b></p>
+                <p>Tsinghua SIGS</p>
+            </div>
+            <div class="profile-card">
+                <img src="./images/anand.png" alt="Anand Bhattad">
+                <p><b>Anand Bhattad</b></p>
+                <p>TTI-Chicago</p>
+            </div>
+            <div class="profile-card">
+                <img src="./images/roni.jpeg" alt="Roni Sengupta">
+                <p><b>Roni Sengupta</b></p>
+                <p>UNC Chapel Hill</p>
+            </div>
+            <div class="profile-card">
+                <img src="./images/desponia.jpeg" alt="Despoina Paschalidou">
+                <p><b>Despoina Paschalidou</b></p>
+                <p>NVIDIA</p>
+            </div>
+            <div class="profile-card">
+                <img src="./images/lingjie.jpeg" alt="Lingjie Liu">
+                <p><b>Lingjie Liu</b></p>
+                <p>UPenn</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>For inquiries, contact: <a href="mailto:huangqx@cs.utexas.edu">huangqx@cs.utexas.edu</a></p>
+    </footer>
+</body>
+</html>
